@@ -17,17 +17,13 @@ public class Homework_Lesson15
             int m = 30;
             int n = 10;
             int sum = 0;
-            for (int i=0; i< array.length; i++)
+            for (int j : array)
             {
-                if (array[i] == n)
+                if (j == n)
                 {
-                    sum = sum+array[i];
+                    sum = sum + j;
                 }
             }
-            if (m == sum)
-            {
-                return true;
-            }
-            else return false;
+            return m == sum;
         }
 }
